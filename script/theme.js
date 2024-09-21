@@ -48,4 +48,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
     //applySavedTheme();
+    
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
+// Initialize the clock immediately
+updateClock();
 })
