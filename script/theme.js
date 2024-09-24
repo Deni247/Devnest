@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function () {
         if (this.scrollY > 40) {
             if (body.classList.contains('dark')) {
-                navigation.style.backgroundColor = 'rgb(30, 30, 30)'
+                header.style.backgroundColor = 'inherit'
             }
             else {
-                navigation.style.backgroundColor = '#fff'
+                header.style.backgroundColor = 'inherit'
             }
         }
         else {
-            navigation.style.backgroundColor = 'unset'
+            header.style.backgroundColor = 'unset'
         }
     })
 
