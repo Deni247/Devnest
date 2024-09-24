@@ -215,6 +215,7 @@ footer .terms a{
     position: absolute;
     text-align: center;
     margin: 50% auto;
+    z-index: -200;
 }
 
 .hero-content .contact-btn {
