@@ -46,6 +46,7 @@ header {
     right: 0;
     position: fixed;
     background-color: transparent;
+    z-index: 200;
 }
 
 .nav {
