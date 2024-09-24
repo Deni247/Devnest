@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f2;
+    background-color: rgba(240, 240, 242, .97);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -181,11 +181,6 @@ footer .terms a{
     height: 100vh;
 }
 
-/**.hero img {
-    width: 100%;
-    height: auto;
-}**/
-
 .services {
     margin-top: 20px;
     padding: 20px;
@@ -340,6 +335,9 @@ footer .terms a{
 }
 
 /* Dark Theme setup for the body*/
+.dark header { 
+    background-color: rgba(30, 30, 30, .97);
+}
 .dark {
     background-color: #000;
     color: #fff;
