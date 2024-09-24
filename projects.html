@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company - Projects</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400" rel="stylesheet" />
-    <script src="script/theme.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+    <script defer src="./script/script.js"></script>
+    <script src="./script/theme.js"></script>
 </head>
 <body>
-    <header>
-        <div id="clock"></div>
-
-        <div class="nav" id="navigation">
+    <header id="header">
+        <div class="nav">
             <div>
                 <svg id="logo" viewBox="0 0 370 71.13386160395407" height="71.13386160395407" width="370">
                     <defs id="SvgjsDefs1147"></defs>
@@ -38,13 +37,13 @@
                     <li><a href="index.html">Home</a></li>
                     <li class="current"><a href="projects.html">Projects</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li>
-                        <a href="#" class="material-symbols-outlined" id="light">
+                    <li class="theme-icons-holder">
+                        <span class="material-symbols-outlined" id="light">
                             light_mode
-                        </a>
-                        <a href="#" class="material-symbols-outlined" id="dark">
+                        </span>
+                        <span class="material-symbols-outlined" id="dark">
                             dark_mode
-                        </a>
+                        </span>
                     </li>
                 </ul>
             </div>
@@ -52,20 +51,71 @@
     </header>
 
     <main>
-        <section class="projects">
-            <h2>Our Projects</h2>
-            <div class="project-list">
-                <div class="project">Project 1: E-commerce Website</div>
-                <div class="project">Project 2: Mobile Banking App</div>
-                <div class="project">Project 3: Corporate Website</div>
-                <div class="project">Project 4: Portfolio Website</div>
-                <div class="project">Project 5: Social Media App</div>
-            </div>
+        <section class="project-list">
+            <span>
+                <h2>Our Projects</h2>
+                <button type="button" id="btn">See All</button>
+            </span>
+               <div>
+                   <div class="project">
+            <h2>E-commerce Website</h2>
+            <img src="https://plus.unsplash.com/premium_photo-1670863088251-500151f2117b?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="E-commerce Website">
+            <p>A user-friendly e-commerce platform enabling businesses to sell products online with features like shopping carts, payment gateways, and inventory management.</p>
+        </div>
+
+        <div class="project">
+            <h2>Mobile Banking App</h2>
+            <img src="https://plus.unsplash.com/premium_photo-1681487850722-f686554f95c1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mobile Banking App">
+            <p>An intuitive mobile application for banking services, allowing users to manage accounts, transfer funds, and view transaction history securely.</p>
+        </div>
+
+        <div class="project">
+            <h2>Corporate Website</h2>
+            <img src="https://plus.unsplash.com/premium_photo-1683120670649-ad41808a7e5c?q=80&w=938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Corporate Website">
+            <p>A professional website for a corporation, showcasing services, company information, and providing contact options to enhance customer engagement.</p>
+        </div>
+
+        <div class="project">
+            <h2>Portfolio Website</h2>
+            <img src="https://plus.unsplash.com/premium_photo-1680680514765-c9a5868d0d5c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Portfolio Website">
+            <p>A visually appealing portfolio site for showcasing an individual’s work, skills, and projects, aimed at attracting potential clients or employers.</p>
+        </div>
+
+        <div class="project">
+            <h2>Social Media App</h2>
+            <img src="https://plus.unsplash.com/premium_photo-1721697080473-8281f165fbfb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Social Media App">
+            <p>A dynamic social media application that connects users, allowing them to share content, communicate, and engage with communities.</p>
+        </div>
+               </div> 
         </section>
     </main>
-
-    <footer>
-        <p>© 2024 DEVNEST. All rights reserved.</p>
+   <footer>
+        <div id="clock" class="clock"></div>
+        <hr>
+        <div class="socials">
+            <a href="https://github.com/Deni247/Devnest">
+                <img src="images/github.png" alt="github_icon">
+            </a>
+            <a href="https://example.com">
+                <img src="images/twitch.png" alt="twitch_icon">
+            </a>
+            <a href="https://example.com">
+                <img src="images/facebook.png" alt="facebook_icon">
+            </a>
+            <a href="https://example.com">
+                <img src="images/twitter.png" alt="twitter_icon">
+            </a>
+            <a href="https://example.com">
+                <img src="images/linkedin.png" alt="linkedin_icon">
+            </a>
+        </div>
+        <hr>
+        <p>© 2024 devnest. All rights reserved.</p>
+        <div class="terms">
+            <a href="https://example.com">Terms of Service</a>
+            <a href="https://example.com">Privacy Policy</a>
+            <a href="https://example.com">Safety & Security</a>
+        </div>
     </footer>
 </body>
 </html>
