@@ -15,14 +15,6 @@ body {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#logo {
-    width: 100px;
-    height: auto;
-    cursor: pointer;
-    overflow: visible;
-    margin-left: -35px;
-}
-
 /*Styling for the theme icons*/
 @font-face {
     font-family: 'Material Symbols Outlined';
@@ -376,19 +368,14 @@ footer .terms a{
 }
 
 /*Screen sizing setup*/
-@media screen and (min-width: 765px) {
-     #logo {
-         width: 120px;
-         height: auto;
-     }
-     
+@media screen and (min-width: 765px) {    
      .nav {
     justify-content: space-between;
      }
      
      .hero {    
     background-position: 100%;
-    background-size: contain;
+    background-size: cover;
     }
     
     footer {
