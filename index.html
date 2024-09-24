@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company - Home</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
     <script defer src="script/script.js"></script>
 </head>
 <body>
-    <header>
-        <div id="clock"></div>
-        <div class="nav" id="navigation">
+    <header id="header">
+        
+        <div class="nav">
             <div>
                 <svg id="logo" viewBox="0 0 370 71.13386160395407" height="71.13386160395407" width="370">
                     <defs id="SvgjsDefs1147"></defs>
@@ -33,30 +33,36 @@
             </div>
             <div>
                 <ul>
-                    <li><a class="current" href="index.html">Home</a></li>
+                    <li class="current"><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li>
-                        <a href="#" class="material-symbols-outlined" id="light">
+                    <li class="theme-icons-holder">
+                        <span class="material-symbols-outlined" id="light">
                             light_mode
-                        </a>
-                        <a href="#" class="material-symbols-outlined" id="dark">
+                        </span>
+                        <san class="material-symbols-outlined" id="dark">
                             dark_mode
-                        </a>
+                        </span>
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> 
+        
     </header>
     <main>
-        <!--<section class="clock" id="clock">
-        </section>-->
         <section class="hero">
-            <img src="https://buildfire.com/wp-content/themes/buildfire/assets/images/support-bg.png" alt="">
+           
+           <section class="hero-content">
+               <p>
+At Devnest, our mission is to empower businesses by crafting tailored web and mobile solutions that drive innovation, enhance user experiences, and foster digital transformation. We strive to be a trusted partner in building scalable, high-quality products that meet the unique needs of our clients, while delivering exceptional service and cutting-edge technology.
+
+</p>
+            <button class="contact-btn">Contact Us</button>
+        </section>
         </section>
 
         <section class="services">
-            <h2>Our Services</h2>
+            <h1>Our Services</h1>
             <div class="service-list">
                 <div class="service">
                     <span>
@@ -66,7 +72,7 @@
                         </a>
                     </span>
                     <span>
-                        <h3><a href="https://example.com">Web Development</a></h3>
+                        <h2><a href="https://example.com">Web Development</a></h2>
                         <p>We create responsive, secure websites with custom design, development, and ongoing support to
                             ensure optimal performance and user experience.</p>
                     </span>
@@ -80,7 +86,7 @@
                         </a>
                     </span>
                     <span>
-                        <h3><a href="https://example.com">App Development</a></h3>
+                        <h2><a href="https://example.com">App Development</a></h2>
                         <p>We design and develop custom, user-friendly mobile apps, focusing on performance, security,
                             and seamless user experiences across all platforms.</p>
                     </span>
@@ -94,7 +100,7 @@
                         </a>
                     </span>
                     <span>
-                        <h3><a href="https://example.com">UX/UI Design</a></h3>
+                        <h2><a href="https://example.com">UX/UI Design</a></h2>
                         <p>We craft intuitive and engaging user interfaces, prioritizing seamless user experiences and
                             aesthetically pleasing designs tailored to your needs.</p>
                     </span>
@@ -108,7 +114,7 @@
                         </a>
                     </span>
                     <span>
-                        <h3><a href="https://example.com">SEO Services</a></h3>
+                        <h2><a href="https://example.com">SEO Services</a></h2>
                         <p>We optimize your website for search engines, improving visibility, driving organic traffic,
                             and enhancing online rankings to grow your business.</p>
                     </span>
@@ -122,22 +128,45 @@
                         </a>
                     </span>
                     <span>
-                        <h3><a href="https://example.com">Marketing</a></h3>
+                        <h2><a href="https://example.com">Marketing</a></h2>
                         <p>We create tailored marketing strategies to increase brand awareness, drive engagement, and
                             boost conversions across digital and social platforms.</p>
                     </span>
                 </div>
             </div>
-        </section>
-
-        <section class="cta">
-            <button class="contact-btn">Contact Us</button>
-        </section>
+        </section>        
     </main>
     <footer>
-        <p>© 2024 DEVNEST. All rights reserved.</p>
+        <div id="clock" class="clock">
+            
+        </div>
+        <hr>
+        <div class="socials">
+            <a href="https://github.com/Deni247/Devnest">
+                <img src="images/github.png" alt="github_icon">
+            </a>
+            <a href="https://example.com">
+                <img src="images/twitch.png" alt="twitch_icon">
+            </a>
+            <a href="https://example.com">
+                <img src="images/facebook.png" alt="facebook_icon">
+            </a>
+            <a href="https://example.com">
+                <img src="images/twitter.png" alt="twitter_icon">
+            </a>
+            <a href="https://example.com">
+                <img src="images/linkedin.png" alt="linkedin_icon">
+            </a>
+        </div>
+        <hr>
+        <p>© 2024 devnest. All rights reserved.</p>
+        <div class="terms">
+            <a href="https://example.com">Terms of Service</a>
+            <a href="https://example.com">Privacy Policy</a>
+            <a href="https://example.com">Safety & Security</a>
+        </div>
     </footer>
 </body>
-<script src="script/theme.js"></script>
+<script src="./script/theme.js"></script>
 
 </html>
