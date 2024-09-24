@@ -1,6 +1,7 @@
-// Function to display clock some where on the home page.
+const clockElement = document.createElement('span');
+const clock = document.querySelector('.clock');
+
 function updateClock() {
-    const clockElement = document.getElementById('clock');
     const now = new Date();
     
     // Get the current time in HH:MM:SS format
@@ -9,12 +10,29 @@ function updateClock() {
     const seconds = now.getSeconds().toString().padStart(2, '0');
     
     // Display the time
-    clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+    return `${hours}:${minutes}:${seconds}`;
 }
 
-
-//This is an idea for future use.
-function changeBackgroundColor() {
-    document.body.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+function greetUser() { 
+    const time = new Date().getHours();
+    if (time < 12) {
+        return 'Good morning,';
+    }
+    else if (time >= 12 && time <= 17) {
+        return 'Good afternoon,';
+    }
+    else {
+        return 'Good evening,';
+    }
 }
-//setInterval(updateClock, 1000);
+
+function initializeGreeting() {
+    clockElement.innerHTML = `${greetUser()} how can we <a href="https://example.com">assist<img id="link" src="https://img.icons8.com/?size=100&id=60664&format=png&color=077bff"</img></a> you today? | ${updateClock()}`;
+    
+    clock.prepend(clockElement)
+    
+    link.style.backgroundColor = "unset";
+    link.style.border = "unset";
+}
+
+setInterval(initializeGreeting, 1000);
