@@ -18,7 +18,7 @@ This company is based on a comprehensive web development solutions and design in
 
 ## Technologies Used💻
 
-- **Frontend**: HTML, CSS
+- **Frontend**: HTML, CSS, JS
 - **Version Control**: Git, GitHub
 - **Design Tools**: Vs code
 
