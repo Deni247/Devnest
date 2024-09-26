@@ -15,8 +15,7 @@ This company is based on a comprehensive web development solutions and design in
 ## Technologies Used💻
 
 - **Frontend**: HTML, CSS, JavaScript, React
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
+- **Backend**: mongo
 - **Version Control**: Git, GitHub
 - **Design Tools**: Vs code
 
@@ -33,10 +32,10 @@ This company is based on a comprehensive web development solutions and design in
 We welcome contributions! Please follow these steps to contribute:
 
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
+2. Create a new branch (`git checkout -b feature-Devnest branch`).
 3. Make your changes.
 4. Commit your changes (`git commit -m 'Add new feature'`).
-5. Push to the branch (`git push origin feature-branch`).
+5. Push to the branch (`git push origin feature-Devnest branch`).
 6. Open a pull request.
 
 ## Developers👨‍💻
@@ -65,7 +64,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any questions or feedback, please contact us at [deniseseti7@egmail.com](mailto:deniseseti7@gamil.com).
+For any questions or feedback, please contact us at [setidenise@gmail.com](mailto:setidenise@gmail.com).
 
 
 
