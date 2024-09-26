@@ -42,22 +42,22 @@ We welcome contributions! Please follow these steps to contribute:
 ## Developers👨‍💻
 We are a team of passionate developers dedicated to creating high-quality web applications. Meet the team:
 ### Lead Developer:
-Name: Gustave 
-Role: Software Engineer
-Contact: ilungagustave73@gmail.com
-Github: github.com/Gvstave
+- **Name**: Gustave 
+- **Role**: Software Engineer
+- **Contact**: ilungagustave73@gmail.com
+- **Github**: github.com/Gvstave
 
-### Frontend Developer
-Name: Wesley Choonde Chilangi
-Role: Software Developer
-Contact: wesleychilangi93@gmail.com
-Github: github.com/WESLEYCHILANGI
+### Frontend Developer:
+- **Name**: Wesley Choonde Chilangi
+- **Role**: Software Developer
+- **Contact**: wesleychilangi93@gmail.com
+- **Github**: github.com/WESLEYCHILANGI
 
-### Administrator
-Name: Denise Seti
-Role: Web developer
-Contact: setidenise@gmail.com
-Github: github.com/Deni247
+### Administrator:
+- **Name**: Denise Seti
+- **Role**: Web developer
+- **Contact**: setidenise@gmail.com
+- **Github**: github.com/Deni247
 
 ## License
 
