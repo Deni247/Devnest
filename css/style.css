@@ -97,7 +97,7 @@ header {
 }
 
 /**Styling for the footer and within the footer begins**/
-#clock {
+#clock-theme-holder {
     text-align: center;
     font-size: unset;
     display: flex;
