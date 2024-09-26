@@ -58,7 +58,7 @@ header {
 .nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     height: 50px;
     background-color: transparent;
@@ -111,6 +111,14 @@ header {
     width: 10px;
     height: auto;
     margin-top: 20px;
+}
+
+.contact-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 50px;
+    border: none;
+    cursor: pointer;
 }
 
 footer {
@@ -175,21 +183,6 @@ footer .terms a{
     object-fit: fill;
     width: 100%;
     height: 100vh;
-}
-
-.hero-content{
-    position: absolute;
-    text-align: center;
-    margin: 200px auto;
-    z-index: -200;
-}
-
-.hero-content .contact-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 20px 50px;
-    border: none;
-    cursor: pointer;
 }
 
 .service-list {
