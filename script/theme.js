@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const navigation = document.getElementById('navigation')
+    
+    //A query to select the dark and light theme elements
     const light = document.getElementById('light')
     const dark = document.getElementById('dark')
     const body = document.body
@@ -47,12 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
             body.classList.remove('dark');
         }
     }
-    //applySavedTheme();
+    applySavedTheme();
     
-
-// Update the clock every second
-setInterval(updateClock, 1000);
-
-// Initialize the clock immediately
-updateClock();
 })
