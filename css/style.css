@@ -110,6 +110,55 @@ main {
     flex: 1;
 }
 
+  .here-to-help {
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fdfdff;
+        }
+
+        .here-to-help h1 {
+            text-align: center;
+            color: inherit;
+        }
+         .here-p {
+            text-align: center;
+            color: inherit;
+        }
+
+        details {
+            background-color: rgba(240, 240, 242, .97);
+           margin-top: 10px;
+           padding: 20px 10px;
+        }
+
+        summary {
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            padding: 5px 0;
+            color: #007bff;
+        }
+
+        .here-to-help div {
+            margin-top: 10px;
+        }
+
+        .here-to-help div a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .here-to-help div span {
+            display: block;
+            margin-top: 20px;
+        }
+
 footer {
     background-color: #fdfdff;
     color: gray;
@@ -174,48 +223,46 @@ footer .terms a{
     height: 100vh;
 }
 
-.services {
-    margin-top: 20px;
+.service-list {
+    margin-top: 0px;
     padding: 20px;
 }
 
-.service-list {
+.services {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
 }
 
-.service {
-    width: 100%;
+.service-list .service {
+    padding: 10px;
     height: auto;
-    display: flex;
-    flex-direction: column;
     background-color: #fdfdff;
-    border: 1px solid #f4f4f4;
-    border-bottom-left-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
-    box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 5px solid #007bff;
+    box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);   
 }
 
-.service span:nth-of-type(2) {
-    padding: 0px 10px;
-}
-
-.service img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-}
-
-.service h2 a {
-    color: #007bff;
-    text-decoration: none;
-}
+.service h2 a{
+            color: #007bff;
+            text-decoration: none;
+      }
+        .service p {
+            color: inherit;
+        }
+        .service img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            object-fit: fill;
+        }
 
 .hero-content{
     position: absolute;
     text-align: center;
-    margin: 50% auto;
+    margin: 200px auto;
     z-index: -200;
 }
 
@@ -231,26 +278,17 @@ footer .terms a{
 .project-list {
     margin-top: 50px;
     padding: 20px;
+}
+
+.projects {
+    display: none;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
-.project-list span {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.project-list span #btn {
-    padding: 5px 20px;
-    color: #007bff;
-    border: 1px solid #007bff;
-    background-color: inherit;
-}
-
-.project-list .project {
-    padding: 10px;
+.project {
+    padding: 10px 10px 20px 10px;
     height: auto;
     background-color: #fdfdff;
     margin-top: 10px;
@@ -260,20 +298,18 @@ footer .terms a{
        
 }
 
-/**
-.projects {
-    margin-top: 20px;
-    padding: 20px;
+.project span {
+    border: 2px solid #007bff;
+    padding: 8px 20px;
+    border-radius: 5px;
 }
 
-.project-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    width: 100%;
-    height: auto;
+.project span a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
 }
-**/
+
 .project h2 {
             color: #007bff;
         }
@@ -338,6 +374,9 @@ footer .terms a{
     color: #fff;
 }
 
+.dark .here-to-help {
+    background-color: rgb(30, 30, 30);
+}
 .dark footer {
     background-color: rgb(30, 30, 30);
 }
@@ -395,19 +434,466 @@ footer .terms a{
      footer .socials, footer .terms {
          justify-content: center;
      }
-    .service-list {
-        display: grid;
+    .services {
         grid-template-columns: 1fr 1fr;
         gap: 40px;
     }
-    .projects .projects-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    .projects {
+        grid-template-columns: 1fr 1fr;
         gap: 40px;
     }
     .team {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}/* General Styles */
+* {
+    transition: background-color 0.3s, color 0.1s;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(240, 240, 242, .97);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: black;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*Styling for the theme icons*/
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 100;
+    src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v207/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOej.woff2) format('woff2');
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: transparent;
+    z-index: 200;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul li {
+    margin: 0px 0px 0px 10px;
+}
+
+.nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav ul li a:hover {
+    text-decoration: 2px #007bff underline;
+}
+
+.nav ul .current {
+    color: #007bff;
+}
+
+.nav div:nth-of-type(2) .theme-icons-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    text-align: center;
+    font-size: unset;
+}
+
+#clock a {
+    text-decoration: none;
+    color: #077bff;
+}
+
+#clock img {
+    width: 10px;
+    height: auto;
+    margin-top: 20px;
+}
+
+main {
+    flex: 1;
+}
+
+  .here-to-help {
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fdfdff;
+        }
+
+        .here-to-help h1 {
+            text-align: center;
+            color: inherit;
+        }
+         .here-p {
+            text-align: center;
+            color: inherit;
+        }
+
+        details {
+            background-color: rgba(240, 240, 242, .97);
+           margin-top: 10px;
+           padding: 20px 10px;
+        }
+
+        summary {
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            padding: 5px 0;
+            color: #007bff;
+        }
+
+        .here-to-help div {
+            margin-top: 10px;
+        }
+
+        .here-to-help div a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .here-to-help div span {
+            display: block;
+            margin-top: 20px;
+        }
+
+footer {
+    background-color: #fdfdff;
+    color: gray;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 11px;
+}
+
+footer div {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+}
+
+footer .socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .socials a {
+    text-decoration: none;
+}
+
+footer .socials img {
+    width: 20px;
+    height: auto;
+}
+
+footer hr {
+    margin: 5px auto;
+    width: 90%;
+    border: 0.5px solid gray;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+footer .terms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .terms a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Styling for the Home Page */
+.hero {
+    background-image: url("https://buildfire.com/wp-content/themes/buildfire/assets/images/support-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: scroll;
+    object-fit: fill;
+    width: 100%;
+    height: 100vh;
+}
+
+.service-list {
+    margin-top: 0px;
+    padding: 20px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.service-list .service {
+    padding: 10px;
+    height: auto;
+    background-color: #fdfdff;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 5px solid #007bff;
+    box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);   
+}
+
+.service h2 a{
+            color: #007bff;
+            text-decoration: none;
+      }
+        .service p {
+            color: inherit;
+        }
+        .service img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            object-fit: fill;
+        }
+
+.hero-content{
+    position: absolute;
+    text-align: center;
+    margin: 200px auto;
+    z-index: -200;
+}
+
+.hero-content .contact-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 50px;
+    border: none;
+    cursor: pointer;
+}
+
+/*styling for Projects Page */
+.project-list {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.projects {
+    display: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.project {
+    padding: 10px 10px 20px 10px;
+    height: auto;
+    background-color: #fdfdff;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 5px solid #007bff;
+       
+}
+
+.project span {
+    border: 2px solid #007bff;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.project span a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.project h2 {
+            color: #007bff;
+        }
+        .project p {
+            color: inherit;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            object-fit: fill;
+        }
+
+/*Styling for About Page */
+.about-us {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.about-us h3{
+    color: #077bff;
+}
+
+.about-us-segment {
+    margin-top: 20px;
+    border-left: 5px solid #077bff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.team a {
+    text-decoration: none;
+    color: #077bff;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Dark Theme setup for the body*/
+.dark header { 
+    background-color: rgba(30, 30, 30, .97);
+}
+.dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark .here-to-help {
+    background-color: rgb(30, 30, 30);
+}
+.dark footer {
+    background-color: rgb(30, 30, 30);
+}
+
+.dark footer img {
+    background-color: gray;
+    border: 1px solid gray;
+    
+}
+
+.dark .services .service{
+    background-color: rgb(30, 30, 30);
+    border: none;
+}
+
+.dark .project-list .project {
+    background-color: rgb(30, 30, 30);
+}
+
+.dark .services .service p,
+.dark .projects .project p {
+    color: #fff;
+}
+
+.dark .services .service h3 a {
+    color: #007bff;
+}
+
+.dark .team-member img {
+    border: 2px solid #077bff;
+}
+
+/*Screen sizing setup*/
+@media screen and (min-width: 765px) {    
+     .nav {
+    justify-content: space-between;
+     }
+     
+     .hero {    
+    background-position: 100%;
+    background-size: cover;
+    }
+    
+    footer {
+        font-size: 11px;
+    }
+     
+     footer div a {
+         margin: 0px 10px;
+     }
+     
+     footer hr {
+         display: none;
+     }
+     footer .socials, footer .terms {
+         justify-content: center;
+     }
+    .services {
+        grid-template-columns: 1fr 1fr;
         gap: 40px;
+    }
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    .team {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
     }
 }
