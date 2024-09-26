@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
         dark.style.display = 'block'
         body.classList.add('dark');
         localStorage.setItem('theme', 'dark');
-        applySavedTheme();
     })
 
     dark.addEventListener('click', function () {
@@ -35,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
         light.style.display = 'block'
         body.classList.remove('dark');
         localStorage.setItem('theme', 'light');
-        applySavedTheme();
     })
 
     function applySavedTheme() {
@@ -51,6 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
             body.classList.remove('dark');
         }
     }
-    
+    applySavedTheme();
     
 })
