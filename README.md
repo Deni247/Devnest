@@ -7,15 +7,18 @@ This company is based on a comprehensive web development solutions and design in
 ## Features😍
 
 - **Responsive Design**: Ensures the website looks great on all devices, including desktops, tablets, and smartphones.
-- **Dynamic Content**: Utilizes JavaScript and APIs to provide real-time updates and interactive elements.
+- **Website info**: Has a home page, about and contact for more details about the company
+- **SEO Optimization**: Implements best practices for search engine optimization to improve visibility.
+
+## Upcoming Features
+- **Dynamic Content**: Will utilize JavaScript and APIs to provide real-time updates and interactive elements.
 - **User Authentication**: Secure login and registration system with password encryption.
 - **Database Integration**: Connects to a backend database to store and retrieve user data.
-- **SEO Optimization**: Implements best practices for search engine optimization to improve visibility.
+ 
 
 ## Technologies Used💻
 
-- **Frontend**: HTML, CSS, JavaScript, React
-- **Backend**: mongo
+- **Frontend**: HTML, CSS
 - **Version Control**: Git, GitHub
 - **Design Tools**: Vs code
 
@@ -23,8 +26,6 @@ This company is based on a comprehensive web development solutions and design in
 ## Usage
 
 - **Homepage**: Displays the main content and navigation links.
-- **Login/Register**: Allows users to create an account or log in.
-- **Dashboard**: Provides personalized content for logged-in users.
 - **Admin Panel**: Accessible only to administrators for managing content and users.
 
 ## Contributing
