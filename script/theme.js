@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const navigation = document.getElementById('navigation')
-    
-    //A query to select the dark and light theme elements
+    const header = document.getElementById('header')
     const light = document.getElementById('light')
     const dark = document.getElementById('dark')
     const body = document.body
@@ -9,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     dark.style.display = 'none'
 
     window.addEventListener('scroll', function () {
-        if (this.scrollY > 40) {
+        if (this.scrollY > 20) {
             if (body.classList.contains('dark')) {
                 header.style.backgroundColor = 'inherit'
             }
@@ -26,29 +24,29 @@ document.addEventListener('DOMContentLoaded', function () {
         light.style.display = 'none'
         dark.style.display = 'block'
         body.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
+        localStorage.setItem('theme', 'dark')
     })
 
     dark.addEventListener('click', function () {
         dark.style.display = 'none'
         light.style.display = 'block'
         body.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
+        localStorage.setItem('theme', 'light')
     })
 
+//This function helps to keep the theme consistent across all the pages. also it keeps user theme preference for future reference.
     function applySavedTheme() {
         const savedTheme = localStorage.getItem('theme');
 
         if (savedTheme === 'dark') {
             dark.style.display = 'none'
             light.style.display = 'block'
-            body.classList.add('dark');
+            body.classList.add('dark')
         } else {
             light.style.display = 'none'
             dark.style.display = 'block'
-            body.classList.remove('dark');
+            body.classList.remove('dark')
         }
     }
     applySavedTheme();
-    
 })
