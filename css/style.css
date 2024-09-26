@@ -58,17 +58,17 @@ header {
     justify-content: space-between;
 }
 
-header div span a {
+header div:nth-of-type(2) span a {
     color: inherit;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-header div span a:hover {
+header div:nth-of-type(2) span a:hover {
     text-decoration: 2px #007bff underline;
 }
 
-header div span .current {
+header div:nth-of-type(2) span .current {
     color: #007bff;
 }
 
