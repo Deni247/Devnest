@@ -78,13 +78,6 @@ header div:nth-of-type(2) .current {
 
 
 /**Styling for the footer and within the footer begins**/
-#clock-theme-holder {
-    text-align: center;
-    font-size: unset;
-    display: flex;
-    align-items: center;
-}
-
 #clock a {
     text-decoration: none;
     color: #077bff;
@@ -243,6 +236,13 @@ summary {
     outline: none;
     padding: 5px 0;
     color: #007bff;
+    list-style: none;
+    text-align: center;
+}
+
+/* Hide the arrow (disclosure triangle) */
+summary::-webkit-details-marker {
+  display: none;
 }
        
 .here-to-help div {      
