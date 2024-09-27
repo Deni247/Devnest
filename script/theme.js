@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', function () {
         if (this.scrollY > 20) {
-            header.style.backdropFilter = 'blur(10px)'
+            header.style.backdropFilter = 'blur(20px)'
             /**if (body.classList.contains('dark')) {
                 //header.style.backgroundColor = 'inherit'
                 header.style.backdropFilter = 'blur(10px)'
