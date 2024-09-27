@@ -8,14 +8,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', function () {
         if (this.scrollY > 20) {
-            if (body.classList.contains('dark')) {
+            header.style.backdropFilter = 'blur(10px)'
+            /**if (body.classList.contains('dark')) {
                 //header.style.backgroundColor = 'inherit'
                 header.style.backdropFilter = 'blur(10px)'
             }
             else {
                 //header.style.backgroundColor = 'inherit'
                 header.style.backdropFilter = 'blur(10px)'
-            }
+            }**/
         }
         else {
             header.style.backdropFilter = 'unset'
