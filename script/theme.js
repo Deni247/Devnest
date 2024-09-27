@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const dark = document.getElementById('dark')
     const body = document.body
 
-    light.style.display = 'none'
+    dark.style.display = 'none'
 
     window.addEventListener('scroll', function () {
         if (this.scrollY > 20) {
