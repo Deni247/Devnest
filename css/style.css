@@ -52,6 +52,7 @@ header {
     right: 0;
     position: fixed;
     background-color: transparent;
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: row;
     align-items: center;
