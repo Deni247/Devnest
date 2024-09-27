@@ -357,10 +357,10 @@ summary::-webkit-details-marker {
     margin-bottom: 10px;
 }
 
-/* Dark Theme setup for the body*/
-.dark header { 
+/* Dark Theme setup for the whole page*/
+/**.dark header { 
     background-color: rgba(30, 30, 30, .97);
-}
+}**/
 .dark {
     background-color: #000;
     color: #fff;
