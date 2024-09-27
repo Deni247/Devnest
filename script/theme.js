@@ -9,16 +9,17 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function () {
         if (this.scrollY > 20) {
             if (body.classList.contains('dark')) {
-                header.style.backgroundColor = 'inherit'
+                //header.style.backgroundColor = 'inherit'
                 header.style.backdropFilter = 'blur(10px)'
             }
             else {
-                header.style.backgroundColor = 'inherit'
+                //header.style.backgroundColor = 'inherit'
                 header.style.backdropFilter = 'blur(10px)'
             }
         }
         else {
-            header.style.backgroundColor = 'unset'
+            header.style.backdropFilter = 'unset'
+            //header.style.backgroundColor = 'unset'
         }
     })
 
