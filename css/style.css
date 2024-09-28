@@ -37,6 +37,7 @@ body {
     min-height: 100vh;
     color: black;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: background-color 0.3s ease;
 }
 
 main {
@@ -87,21 +88,6 @@ header div:nth-of-type(2) .current {
     width: 10px;
     height: auto;
     margin-top: 20px;
-}
-
-.theme-icons-holder {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 20px 50px;
-    border: none;
-    cursor: pointer;
 }
 
 footer {
@@ -162,21 +148,52 @@ footer .terms a{
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     object-fit: fill;
     width: 100%;
     height: 100vh;
 }
 
+.services-intro {
+    background-color: #fdfdff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.services-intro img {
+    width: 150px;
+    height: auto;
+}
+
+.services-intro span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-intro .contact-btn {
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    color: #007bff;
+    padding: 8px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 5px;
+}
+
+.services-intro .contact-btn:hover {
+    background-color: #007bff;
+    color: #fdfdff;
+}
 .service-list {
-    margin-top: 0px;
     padding: 20px;
+    text-align: center;
 }
 
 .services {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
 }
 
 .service-list .service {
@@ -185,8 +202,6 @@ footer .terms a{
     background-color: #fdfdff;
     margin-top: 10px;
     border-radius: 5px;
-    margin-bottom: 20px;
-    border-left: 5px solid #007bff;
     box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);   
 }
 
@@ -197,36 +212,44 @@ footer .terms a{
 
 .service p {
     color: inherit;
-	text-align: center;
 }
 
 .service img {
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 4px;
     object-fit: fill;
 }
 
+/**styling section for the summary and details**/
 .here-to-help {
     margin: 40px auto;
     padding: 20px;
     background-color: #fdfdff;
+    text-align: center;
 }
 
-.here-to-help h1 {
-    text-align: center;
-    color: inherit;
+details div span {          
+	background-color: #007bff;	           
+	padding: 8px 12px;            
+	border-radius: 5px;                         
+	display: inline-block; 
 }
 
-.here-p {
-    text-align: center;
-    color: inherit;
+details:nth-of-type(3) div span {
+    margin-top: 10px;
+}
+
+details div span a{       
+	text-decoration: none;      
+	color: #fff;           
 }
 
 details {
     background-color: rgba(240, 240, 242, .97);
-    margin-top: 10px;
-    padding: 20px 10px;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    border-radius: 4px;
 }
 
 summary {
@@ -237,7 +260,6 @@ summary {
     padding: 5px 0;
     color: #007bff;
     list-style: none;
-    text-align: center;
 }
 
 /* Hide the arrow (disclosure triangle) */
@@ -247,27 +269,13 @@ summary::-webkit-details-marker {
        
 .here-to-help div {      
 	margin-top: 10px;        
-}
-        
-.here-to-help div a {       
-	text-decoration: none;      
-	color: #fff;         
-	background-color: #007bff;	           
-	padding: 8px 12px;            
-	border-radius: 5px;            
-	transition: background-color 0.3s ease;       
-	margin-right: 10px;        
-}
-        
-.here-to-help div span {         
-	display: block;           
-	margin-top: 25px;		
-}
+}        
 
 /*styling for Projects Page */
 .project-list {
     margin-top: 50px;
     padding: 20px;
+    text-align: center;
 }
 
 .projects {
@@ -278,26 +286,25 @@ summary::-webkit-details-marker {
 }
 
 .project {
-    padding: 10px 10px 20px 10px;
+    padding: 0px 10px 20px 10px;
     height: auto;
     background-color: #fdfdff;
     margin-top: 10px;
     border-radius: 5px;
-    margin-bottom: 20px;
-    border-left: 5px solid #007bff;
-       
+    border-top: 5px solid #007bff;
+    text-align: center;
+    display: block;
 }
 
 .project span {
-    border: 2px solid #007bff;
+    background-color: #007bff;
     padding: 8px 20px;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .project span a {
     text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
+    color: #fdfdff;
 }
 
 .project h2 {
@@ -310,7 +317,7 @@ summary::-webkit-details-marker {
         
 .project img {
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 4px;
     object-fit: fill;
 }
@@ -319,25 +326,26 @@ summary::-webkit-details-marker {
 .about-us {
     padding: 20px;
     margin-top: 50px;
+    text-align: center;
 }
 
 .about-us h3{
     color: #077bff;
 }
 
-.about-us-segment {
-    margin-top: 20px;
+.about-us-values {
+    margin: 20px 0px;
     border-left: 5px solid #077bff;
+    border-right: 5px solid #077bff;
     padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: #fdfdff;
 }
 
 .team {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
 }
 
 .team a {
@@ -345,16 +353,11 @@ summary::-webkit-details-marker {
     color: #077bff;
 }
 
-.team-member {
-    text-align: center;
-}
-
 .team-member img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 197px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 10px;
 }
 
 /* Dark Theme setup for the whole page*/
@@ -383,6 +386,9 @@ summary::-webkit-details-marker {
     border: 1px solid gray;   
 }
 
+.dark .services-intro {
+    background-color: rgb(30, 30, 30);
+}
 .dark .services .service{
     background-color: rgb(30, 30, 30);
 }
@@ -399,6 +405,10 @@ summary::-webkit-details-marker {
 .dark .services .service h3 a {
     color: #007bff;
 }
+
+.dark .about-us-values {
+        background-color: unset;
+    }
 
 .dark .team-member img {
     border: 2px solid #077bff;
@@ -431,15 +441,11 @@ summary::-webkit-details-marker {
      }
     .services {
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
     }
     .projects {
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
     }
     .team {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
     }
 }
